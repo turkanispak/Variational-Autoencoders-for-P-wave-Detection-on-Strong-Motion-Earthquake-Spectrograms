@@ -1,0 +1,24 @@
+# VAE detection summary
+run,arch,auc,mae
+attn_no_skips_ld128_d16_h4_20251013_012554,attn_no_skips,0.875,0.00428
+basic_no_attn_no_skips_ld64_d0_h0_20251016_084233,basic,0.806,0.00462
+hybrid_vae_ld256_d24_h24_20250925_122322,original,0.845,0.00213
+skip_no_attn_ld128_d0_h0_20251009_091300,skip_no_attn,0.821,0.00119
+
+# Attention-VAE SNR bins
+bin,snr_range,n,auc
+0,-inf to 12.8 dB,32,0.849
+1,12.8 to 16.9 dB,31,0.889
+2,16.9 to 22.3 dB,31,0.892
+3,22.3 to inf dB,32,0.891
+
+# STA/LTA detection
+method,auc,n_records
+STA/LTA,0.827,127
+
+# STA/LTA SNR bins
+bin,snr_range,n,auc
+0,-inf to 12.8 dB,32,0.803
+1,12.8 to 16.9 dB,31,0.817
+2,16.9 to 22.3 dB,31,0.831
+3,22.3 to inf dB,32,0.853
